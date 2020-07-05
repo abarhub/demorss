@@ -1,0 +1,12 @@
+<p>show-rss works!</p>
+
+
+
+<ul class="heroes">
+  <li *ngFor="let flux of listFlux?.liste">
+    <h3>{{flux.title}}</h3>
+    Publié le {{flux.datePublication | date:'medium':undefined:'fr'}}
+    <p> {{flux.description}} </p>
+    <a [href]="flux.link">suite</a>
+  </li>
+</ul>
